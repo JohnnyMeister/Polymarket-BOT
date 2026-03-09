@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymarket Quantitative Bot</title>
+    <!-- Modern bold font for a premium fintech feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dashboard/styles.css">
+</head>
+<body>
+    <div class="glass-background"></div>
+    
+    <header class="navbar glass-panel">
+        <div class="logo">
+            <span class="pulse"></span> 
+            <h1>PM-QUANT ENGINE</h1>
+        </div>
+        <div class="status-indicator">
+            <span class="status-dot healthy"></span> System Online
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <!-- Global Portfolio Overview -->
+        <section class="global-stats glass-panel">
+            <h2>Portfolio Overview</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="label">Total Profit</span>
+                    <span class="value success" id="global-profit">$0.00</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Total Trades</span>
+                    <span class="value" id="global-trades">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Expected Value (Agg)</span>
+                    <span class="value" id="global-ev">0.00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Strategy Cards -->
+        <section class="strategy-section">
+            <h2 class="section-title">Active Strategies</h2>
+            <div class="strategy-grid" id="strategy-grid">
+                <!-- Data dynamically populated by app.js -->
+                <div class="loader">Querying Engine...</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/dashboard/app.js"></script>
+</body>
+</html>

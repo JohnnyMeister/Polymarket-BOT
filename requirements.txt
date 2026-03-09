@@ -1,0 +1,13 @@
+websockets
+pandas
+numpy
+SQLAlchemy
+FastAPI
+uvicorn
+python-dotenv
+httpx
+pydantic-settings
+pydantic-settings
+scipy
+pytest
+pytest-asyncio
